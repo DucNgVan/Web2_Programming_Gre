@@ -1,0 +1,13 @@
+### Lấy tất cả lỗi
+GET http://localhost:3000/api/entries
+
+### Thêm lỗi mới
+POST http://localhost:3000/api/entries
+Content-Type: application/json
+
+{
+  "issueCode": "SERVER_DOWN",
+  "response": "Check power and network cables immediately.",
+  "category": "Hardware",
+  "priority": "Critical"
+}
